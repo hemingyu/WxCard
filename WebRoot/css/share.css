@@ -1,0 +1,65 @@
+*{margin: 0;padding: 0;}
+body{
+	background:white;
+}
+.main{
+	width: 100%;
+	height: auto;
+}
+.main .head{
+	width: 100%;
+}
+.main .content{
+	border: 1px solid white;
+	position: relative;
+	width: 100%;
+	background: url("../img/gift1.png") no-repeat center center;
+	background-size: 200px 200px;
+}
+.main .head .share{
+	width: 100%;
+	height: 70px;
+}
+.main .head .share img{
+	width: 50px;
+	height: 50px;
+	float: right;
+	margin-top:10px;
+	margin-right: 10px;
+}
+.main .head .sz{
+	width: 100%;
+	height: 50px;
+}
+.main .head .sz h4{
+	margin-right: 10px;
+	line-height: 40px;
+	float: right;
+	color: #996600;
+}
+.main .content .gift{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+}
+.main .content .gift img{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+}
+
+.foot{
+	position: absolute;
+	width: 100%;
+	clear: both;
+	height: 50px;
+	margin-top: 25px;
+	bottom: 0;
+	line-height: 50px;
+	text-align: center;
+	background:#f0eff5;
+
+}
+font{
+	font-family:Microsoft JhengHei;
+}

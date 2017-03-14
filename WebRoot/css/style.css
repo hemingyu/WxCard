@@ -1,0 +1,173 @@
+*{
+	margin: 0;padding: 0;
+}
+body{
+	width: 100%;height: auto;
+}
+a{
+	text-decoration:none;
+}
+.head{
+	position:relative;
+	width: 100%;
+	height: auto;
+	background: url(../img/head.png)no-repeat center center;
+	background-size:cover;
+	border-top:1px solid #000000;
+}
+.head .logo{
+	width: 80px;height: 80px;
+	border-radius: 50%;
+	margin:25px auto;
+}
+.head .logo img{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+.head h3{
+	font-weight: 20;
+	color: #472323;
+	line-height: 10px;
+}
+.head font{
+	font-weight: 0;
+	color: #472323;
+	line-height: 40px;
+}
+nav{
+	width: 100%;
+	height: auto;
+	margin-top:20px;
+	background:#fdfdfd;
+}
+
+nav #yao{
+	border-top: 1px solid white;
+	background: #F43A51;
+	margin-left: 3%;
+	margin-right: 3%;
+	margin-bottom:6px; 
+}
+nav #yao .card{
+ 	width: 90px;height: 90px; 
+ 	border-radius: 50%; 
+	float: left;
+}
+nav #yao .font{
+	float: left;
+	line-height: 40px;
+	color: white;
+	font-size: 20px;
+	margin-left: 20px;
+}
+nav #yao .font h6{
+	line-height: 10px;
+	margin-left: 8px;
+}
+nav #yao .card img{
+ 	width: 90px;height: 90px; 
+/* 	border-radius: 50%; */
+}
+nav #tip1,#tip2{
+	margin-bottom:10%; 
+	text-align: center;
+	color: white;
+}
+nav #tip1 h4{
+	margin-top: 70px;
+	line-height: 20px;
+}
+nav #tip2 h4{
+	margin-top: 70px;
+	line-height: 20px;
+}
+nav #tip1{
+	float:left;
+    border-top: 1px solid white;
+	background: url(../img/attent.png)no-repeat center center;
+	background-size:cover;
+}
+/* nav #tip1 .attent{
+	width: 65px;height: 60px;
+	margin:5px auto;
+}
+nav #tip1 .attent img{
+	width: 65px;height: 60px;
+} */
+nav #tip2{
+	float:right;
+	border-top: 1px solid white;
+	background: url(../img/sharelogo2.png)no-repeat center center;
+	background-size:cover;
+}
+.foot{
+	position: absolute;
+	width: 100%;
+	clear: both;
+	height: 50px;
+	margin-top: 25px;
+	bottom: 0;
+	line-height: 50px;
+	text-align: center;
+	background:#f0eff5;
+}
+.diob{
+	width: 96%;
+	border:1px solid #000000;
+	margin-left: 6%;
+	margin-right: 2%;
+	margin-bottom:6px;
+	text-align: center;
+}
+.diob h2{
+	color: yellow;
+	opacity: 1;
+	font-weight: 200;
+	height: 30px;
+	margin-top: 60px
+}
+.diob .loo{
+	width: 60px;
+	height: 60px;
+	background:url("../img/fig.png")no-repeat center center;
+	opacity: 1;
+	background-size: cover;
+
+}
+.dioc{
+	width:42%;
+	float:left;
+	margin-left:4%;
+	margin-bottom:10%; 
+	text-align: center;
+	color: white;
+	margin-right:0.5%;
+    border: 1px solid #3AA8F4;
+	background: #3AA8F4; 
+
+}
+.dioc  .bb{
+	margin-top: 20px;
+	line-height: 30px;
+}
+.dioc  .bb1{
+	color:blue;
+	font-size:20px;
+}
+.dioc  .bb2{
+	color:red;
+	font-size:26px;
+}
+#dialogBg2{
+	width: 100%;
+	height: 100%;
+	background: #000000;
+	opacity: .8;
+	filter: alpha(opacity=60);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	display: none;
+}

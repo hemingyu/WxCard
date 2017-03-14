@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"/WEB-INF/classes/struts-2.3.dtd">
+	
+<struts>
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<constant name="struts.action.extension" value="action" />
+	<constant name="struts.serve.static.browserCache" value="false" />
+	
+	<package name="s2sh" extends="struts-default">
+		<!-- 不用授权登陆 用户进入-->
+		<action name="welcome" method="welcome" class="com.bufoon.action.WelcomeAction">
+			<result name="success" type="redirect">/getUserInfo.action</result>
+			<result name="error" type="redirect">/weixinOauth.action</result>
+			<result name="OAuth">/yaoyiyao.jsp?id=${oauthId}</result>
+		</action>
+		<!-- 用户第一次进入授权登陆 -->
+		<action name="welcomeAuth" method="welcomeAuth" class="com.bufoon.action.WelcomeAction">
+		</action>
+		<!-- 获取用户的信息-->
+		<action name="getUserInfo" method="getUserInfo" class="com.bufoon.action.WelcomeAction">
+			<result name="success">/navigation.jsp</result>
+			<result name="sorry">/sorry.jsp</result>
+		</action>
+		<!-- 获取用户资料失败-->
+		<action name="weixinOauth" method="weixinOauth" class="com.bufoon.action.WelcomeAction">
+			<result name="sorry">/sorry.jsp</result>
+		</action>
+		<!-- 判断用户有没有关注-->
+		<action name="getAttion" method="getAttion" class="com.bufoon.action.LoginYaoAction">
+		</action>
+		<!-- 用户进入摇卡券页面-->
+		<action name="loginYao" method="loginYao" class="com.bufoon.action.LoginYaoAction">
+			<result name="success">/yao.jsp</result>
+			<result name="notstart">/none.jsp</result>
+		    <result name="error">/gameOver.jsp</result>
+		    <result name="sorry">/sorry.jsp</result>
+		</action>
+		<!-- 用户进入关注页面 -->
+		<action name="guanzhu" method="guanzhu" class="com.bufoon.action.GuanzhuAction">
+			<result name="success">/guanzhu.jsp</result>
+		    <result name="sorry">/sorry.jsp</result>
+		</action>
+		<!-- 用户已经摇完了 -->
+		<action name="gameOver" method="gameOver" class="com.bufoon.action.GuanzhuAction">
+			<result name="success">/gameOver.jsp</result>
+		    <result name="sorry">/sorry.jsp</result>
+		</action>
+		<!-- 用户进入分享页面 -->
+		<action name="share" method="share" class="com.bufoon.action.LoginYaoAction">
+			<result name="success">/share.jsp</result>
+		    <result name="sorry">/sorry.jsp</result>
+		</action>
+		<!-- 微信JS签名用户的领取卡券与分享的参数 -->
+		<action name="wechatConfig" method="wechatConfig" class="com.bufoon.action.WechatConfigAction">
+		</action>
+		<!-- 微信JS签名用户分享 的参数-->
+		<action name="wechatSignConfig" method="wechatSignConfig" class="com.bufoon.action.WechatConfigAction">
+		</action>
+		<!-- 保存那些分享用户的数据-->
+		<action name="saveShare" method="saveShare" class="com.bufoon.action.WelcomeAction">
+		</action>	
+		<!-- 在用户摇到三张随机的卡券 -->
+		<action name="geLiPrize" method="geLiPrize" class="com.bufoon.action.GeLiPrizeAction">
+		</action>	
+		<!-- 用户进入红包领取页 -->
+		<action name="redPack" method="redPack" class="com.bufoon.action.RedPackAction">
+		</action>
+		<!-- 用户进入红包领取企业红包 -->
+		<action name="redPackCompany" method="redPackCompany" class="com.bufoon.action.RedPackCompanyAction">
+		</action>
+	</package>
+</struts> 

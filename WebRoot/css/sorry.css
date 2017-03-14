@@ -1,0 +1,25 @@
+*{
+	padding: 0;margin: 0;
+}
+body{
+	background:#DAD9D7;
+	font-family:"Î¢ÈíÑÅºÚ";
+	height:100%;
+}
+.main{width: 100%;
+	height: 300px;
+	margin: 0 auto;
+	margin-top: 30%;
+}
+.c1{
+	width: 130px;
+	height: 130px;
+	margin: 0 auto;
+}
+.c1 .img1{
+	width: 100%;
+	height: 100%
+}
+h2{
+	text-align:center;color:#555;font-size:18px;font-weight:normal;height:35px
+}
